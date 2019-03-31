@@ -1,4 +1,4 @@
-
+// 1st box is static so you can see how it look like
 var examDate = new Date("May 06, 2019 15:00:00").getTime();
 
 var x = setInterval(function() {
@@ -17,6 +17,7 @@ var x = setInterval(function() {
 
 
 
+// Adding next one with user inputs
 addAnother = function() {
 
   
@@ -54,16 +55,30 @@ addAnother = function() {
     timeElem.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
     
 
-    window.localStorage.setItem(JSON.stringify(title), JSON.stringify(dateEntered));
-
 	}, 10);
   
     
     ul.appendChild(liElem);
+  }
 
 
-    
 
+var modal = document.getElementById('info-box');
+var btn = document.getElementById("infoBtn");
+var closeModal = document.getElementsByClassName("closeBtn")[0];
 
+btn.onclick = function() {
+  modal.style.display = "block";
 }
+
+closeModal.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 

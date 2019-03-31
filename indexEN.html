@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="lang">
+        <a href="index.html">PL</a>
+        <p>|</p>
+        <a href="indexEN.html">EN</a>
+    </div>
+    
+    <h2 class="page-title">Event Counter</h2>
+
+    <div class="new-form">
+            <input type="date" id="date">
+            <input type="text" id="new-title" placeholder="End of what?">
+            <button class="btnAdd" id="btnAdd" onclick="addAnother()">Add</button>
+        </div>
+
+
+    <ul class="counter-container" id="container">
+    
+    <li class="exams">
+        <h2>Till Exams</h2>
+        <p id="exams"></p>
+    </li>
+</ul>
+
+
+
+<div class="information">
+   
+        <button id="infoBtn">
+            <i class="fas fa-question"></i>
+        </button>
+    
+        <div id="info-box" class="modal">
+            <div class="modal-information">
+                <button class="closeBtn">
+                        <i class="fas fa-times" id="closeBtn"></i>
+                </button>
+    
+                <div class="info-container">
+
+                    <h2>How to add? It's easy! </h2>
+                    <div class="how-to-add">
+                        <h2>1.Just choose a date: </h2>
+                        <img src="img/step1.png" alt="step1" height="150px" width="150px">
+                        <h2>2.Then give the title for your event:</h2>
+                        <img src="img/step2.png" alt="step2" height="50px" width="250px">
+                        <h2>3.Click Add!</h2>
+                        <img src="img/step3.png" alt="step3" height="50px" width="50px">
+                        <h2>That's all, now add another events!</h2>
+                    </div>
+
+
+
+                </div>
+                
+    
+    
+    
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

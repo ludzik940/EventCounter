@@ -11,6 +11,12 @@
     <title>Document</title>
 </head>
 <body>
+
+    <div class="lang">
+        <a href="index.html">PL</a>
+        <p>|</p>
+        <a href="indexEN.html">EN</a>
+    </div>
     
     <h2 class="page-title">Ile jeszcze?</h2>
 
@@ -22,17 +28,49 @@
 
 
     <ul class="counter-container" id="container">
-    
-    <li class="exams">
-        <h2>Do matury</h2>
-        <p id="exams"></p>
-    </li>
+        <li class="exams">
+            <h2>Do matury</h2>
+            <p id="exams"></p>
+        </li>
+    </ul>
 
-  
-    
-    
-</ul>
 
+
+    <div class="information">
+   
+            <button id="infoBtn" class="infoBtn">
+                <i class="fas fa-question"></i>
+            </button>
+        
+            <div id="info-box" class="modal">
+                <div class="modal-information">
+                    <button class="closeBtn">
+                            <i class="fas fa-times" id="closeBtn"></i>
+                    </button>
+        
+                    <div class="info-container">
+    
+                        <h2>Jak dodać wydarzenie? To proste! </h2>
+                        <div class="how-to-add">
+                            <h2>1.Wybierz datę </h2>
+                            <img src="img/step1.png" alt="step1" height="150px" width="150px">
+                            <h2>2.Dodaj tytuł:</h2>
+                            <img src="img/step2PL.png" alt="step2" height="50px" width="250px">
+                            <h2>3.Kliknij Dodaj</h2>
+                            <img src="img/step3PL.png" alt="step3" height="50px" width="50px">
+                            <h2>To wszystko! Dodaj następne wydarzenia!</h2>
+                        </div>
+    
+    
+    
+                    </div>
+                    
+        
+        
+        
+                </div>
+            </div>
+        </div>
     <script src="app.js"></script>
 </body>
 </html>

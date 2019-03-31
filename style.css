@@ -20,6 +20,26 @@ body {
     font-weight: 800;
 }
 
+
+/* lang */
+.lang {
+    display: flex;
+    font-size: 32px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.lang a {
+    text-decoration: none;
+    color: white;
+}
+
+.lang a:hover {
+    color: black;
+    transition: 2s;
+}
+
+
 /* add */
 
 .add {
@@ -92,7 +112,125 @@ body {
 
 
 
+/* !modal box with information */
+
+.information {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    text-align: center;
+}
+
+.info-container > h2 { 
+    font-size: 5vw;
+    text-decoration: underline;
+}
+
+.how-to-add h2 {
+    font-size: 3vw;
+}
+
+.how-to-add > * {
+    margin: 25px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    color: black;
+  }
+  
+
+  .modal-information {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .closeBtn {
+      height: 50px;
+      width: 50px;
+      border: none;
+      outline: none;
+      font-size: 20px;
+      position: relative;
+      left: 95%;
+  }
+
+  #infoBtn {
+      height: 50px;
+      width: 50px;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 64px;
+      color: white;
+  }
+
+  #infoBtn > i {
+    animation: 3s colorAndShake;
+    animation-iteration-count: infinite;
+  }
 
 
 
+  @keyframes colorAndShake {
+    0% {
+        font-size: 64px;
+      }
+    50% {
+        text-shadow: 0 0 10px black;
+        font-size: 72px;
+      }
+    100%{ 
+        font-size: 64px;
+      }
+  }
+  
 
+
+  @media only screen and (max-width: 768px) {
+    .new-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        left: 0;
+    }
+    .new-form > * {
+        width: 200px !important;
+    }
+
+    .counter-container {
+        grid-template-columns: 1fr;
+    }
+    .counter-container > li > h2 {
+        font-size: 32px;
+    }
+
+    .counter-container > li > p {
+        font-size: 24px;
+    }
+
+    .information > .infoBtn  i {
+        font-size: 12px !important;
+
+    }
+  }
