@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,400i,600,600i,700,700i,800,800i,900,900i');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+    background: rgb(76, 144, 255);
+    color: white;
+}
+
+
+.page-title{
+    font-size: 8vw;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* add */
+
+.add {
+    font-size: 72px;
+    margin: 50px;
+}
+
+
+
+.new-form {
+    margin-top: 50px;
+    width: 50%;
+    display: flex;
+    position: relative;
+    left: 25%;
+}
+
+.new-form > * {
+    position: relative;
+    left: 25%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.new-form > #date {
+    width: 25%;
+}
+
+.new-form > #new-title {
+    width: 25%;
+}
+
+.new-form > button {
+    border-radius: 5px;
+    background:rgb(76, 144, 255);
+    color: white;
+}
+/* container */
+
+.counter-container {
+    margin-top: 100px;
+    position: relative;
+    width: 80%;
+    left: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.counter-container > li {
+    list-style-type: none;
+    font-size: 1vw;
+    border-radius: 5px;
+    background: whitesmoke;
+    color: rgb(76, 144, 255);
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+.counter-container > li > h2 {
+    font-size: 2vw;
+    margin: 10px;
+}
+.counter-container > li > p {
+    margin: 25px;
+}
+
+
+
+
+
+
+
